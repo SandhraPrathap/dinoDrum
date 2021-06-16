@@ -8,7 +8,7 @@ void main() {
 }
 
 class DinoDrum extends StatelessWidget {
-final AudioCache _audio = AudioCache(prefix: 'audio/');
+final AudioCache _audio = AudioCache(prefix: 'asset/');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +59,7 @@ final AudioCache _audio = AudioCache(prefix: 'audio/');
                                 Color.fromRGBO(249, 224, 5, 1),
                                 Color.fromRGBO(89, 253, 12, 1)
                               ])),
-                      child: TextButton(onPressed: () {_audio.play("");}, child: Text(""))),
+                      child: TextButton(onPressed: () {_audio.play("conga1.mp3");}, child: Text(""))),
                   SizedBox(width:MediaQuery.of(context).size.width * 0.20),
                   Container(
                       height: MediaQuery.of(context).size.width * 0.40,
@@ -78,7 +78,7 @@ final AudioCache _audio = AudioCache(prefix: 'audio/');
                                 Color.fromRGBO(60, 12, 253, 1)
                              
                               ])),
-                      child: TextButton(onPressed: () {}, child: Text(""))),
+                      child: TextButton(onPressed: () {_audio.play("handclap.mp3");}, child: Text(""))),
                 ],
               ),
                SizedBox(height:MediaQuery.of(context).size.width * 0.10),
@@ -99,7 +99,7 @@ final AudioCache _audio = AudioCache(prefix: 'audio/');
                                 Color.fromRGBO(249, 224, 5, 1),
                                 Color.fromRGBO(235, 8, 8, 1)
                               ])),
-                      child: TextButton(onPressed: () {}, child: Text(""))),
+                      child: TextButton(onPressed: () {_audio.play("kick1.mp3");}, child: Text(""))),
                        SizedBox(height:MediaQuery.of(context).size.width * 0.10),
 
               Row(
@@ -122,7 +122,7 @@ final AudioCache _audio = AudioCache(prefix: 'audio/');
                                 Color.fromRGBO(235, 8, 8, 1),
                                 Color.fromRGBO(176, 12, 253, 1)
                               ])),
-                      child: TextButton(onPressed: () {}, child: Text(""))),
+                      child: TextButton(onPressed: () {_audio.play("snare.mp3");}, child: Text(""))),
                   SizedBox(width:MediaQuery.of(context).size.width * 0.20),
                   Container(
                       height: MediaQuery.of(context).size.width * 0.40,
@@ -141,7 +141,7 @@ final AudioCache _audio = AudioCache(prefix: 'audio/');
                                 Color.fromRGBO(89, 253, 12, 1),
                                 Color.fromRGBO(60, 12, 253, 1)
                               ])),
-                      child: TextButton(onPressed: () {}, child: Text(""))),
+                      child: TextButton(onPressed: () {_audio.play("cl_hihat.mp3");}, child: Text(""))),
                 ],
               )
             ],
